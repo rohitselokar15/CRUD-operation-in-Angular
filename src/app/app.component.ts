@@ -1,13 +1,26 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AddUserComponent } from './add-user/add-user.component';
+import { ListUsersComponent } from './list-user/list-user.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root',  // Root component for the app
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [CommonModule,AddUserComponent, ListUsersComponent]  // Import child components
 })
 export class AppComponent {
-  title = 'my-angular-project';
+  showAddUser = false;
+  showListUsers = false;
+
+  displayAddUser() {
+    this.showAddUser = true;
+    this.showListUsers = false;
+  }
+
+  displayListUsers() {
+    this.showListUsers = true;
+    this.showAddUser = false;
+  }
 }

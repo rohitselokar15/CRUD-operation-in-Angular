@@ -1,27 +1,16 @@
-# MyAngularProject
+# User Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+## Overview
+This project is a simple User Management System built using Angular and Express.js. It allows users to add their details (name, age, and salary) through a form and view a list of all added users. The data is stored in a JSON file (`user.json`) on the server.
 
-## Development server
+## Technologies Used
+- **Angular**: A platform and framework for building single-page client applications using HTML and TypeScript.
+- **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **RxJS**: A library for reactive programming using Observables, making it easier to compose asynchronous or callback-based code.
+- **JSON**: The data format used to store user information in a file.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Features
+- **Add User**: Users can fill out a form with their name, age, and salary to add themselves to the system.
+- **List Users**: Users can view a list of all previously added users.
+- **Data Persistence**: User data is saved in a JSON file on the server, allowing for data persistence between sessions.
